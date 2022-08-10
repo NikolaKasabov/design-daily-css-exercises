@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* padding: 50px; */
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+  /* background-color: #E9EBF8; */
+  background: linear-gradient(135deg, rgba(242,240,255,1) 0%, rgba(244,250,255,1) 100%);
+  /* color: #fff; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 445px;
+  height: 570px;
+  position: relative;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 520px;
+  background: linear-gradient(135deg, rgba(233,232,255,1) 0%, rgba(229,242,254,1) 100%);
+  border-radius: 40px;
+}
+
+.card {
+  width: 355px;
+  height: 520px;
+  padding: 40px;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 20px;
+  box-shadow: 0px 10px 20px 10px rgba(216,227,245,0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.section-1 .price {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.section-1 .text {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.section-2 {
+  /* margin-top: 2rem; */
+}
+
+.section-2 button {
+  background: linear-gradient(90deg, rgba(94,242,143,1) 0%, rgba(119,243,238,1) 100%);
+  width: 100%;
+  text-transform: uppercase;
+  border: none;
+  padding: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.section-2 div {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+}
+
+.section-2 div span {
+  font-weight: bold;
+}
+
+.section-3 {
+  /* margin-top: 1rem; */
+}
+
+.section-3 .form-control:nth-of-type(1) {
+  margin-bottom: 0.5rem;
+}
+
+.section-3 input {
+  opacity: 0;
+  position: absolute;
+}
+
+.section-3 label {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.section-3 label .circle {
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: #E7EBFF;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-3 label .circle i {
+  display: none;
+}
+
+.section-3 input:checked + label .circle i {
+  display: block;
+}
+
+.section-3 label .text {
+  font-size: 0.8rem;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.section-3 label .text .underlined {
+  text-decoration: underline;
+}
+
+.section-4 {
+  /* margin-top: 1rem; */
+  padding: 0.5rem;
+  background-color: #F3F5FF;
+  border: 1px solid #F2F4FF;
+}
+
+.section-4 .wrapper {
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 5px;
+}
+
+.section-4 .wrapper .form-control {
+  position: relative;
+}
+
+.section-4 .wrapper .form-control input {
+  padding: 0.8rem 0 0.8rem 2rem;
+  border: 1px solid #CCD9EE;
+  border-radius: 5px;
+  background-color: transparent;
+}
+
+.section-4 .wrapper .form-control input::placeholder {
+  font-weight: bold;
+  color: #000;
+}
+
+.section-4 .wrapper .form-control i {
+  position: absolute;
+  left: 10px;
+  top: 12px;
+}
+
+.section-4 .wrapper button {
+  flex: 1;
+  border: 1px solid #F1F4FF;
+  border-radius: 5px;
+  background-color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.submit-btn {
+  background: linear-gradient(90deg, rgba(157,193,255,1) 0%, rgba(178,169,255,1) 100%);
+  border: none;
+  padding: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}

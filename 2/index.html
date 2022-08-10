@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"> -->
+  <link rel="stylesheet" href="./style.css">
+  <script src="./app.js" defer></script>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="background"></div>
+
+    <div class="modal">
+      <button class="close-btn">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="wrapper-1 wrapper">
+        <h2>Overall rating</h2>
+
+        <div class="stars-container">
+          <div class="star full">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
+            </svg>
+          </div>
+          <div class="star full">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
+            </svg>
+          </div>
+          <div class="star full">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
+            </svg>
+          </div>
+          <div class="star full">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
+            </svg>
+          </div>
+          <div class="star empty">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z" />
+            </svg>
+          </div>
+        </div>
+        <p>Click to rate</p>
+      </div>
+
+      <div class="wrapper-2 wrapper">
+        <label for="title">Review title</label>
+        <input type="text" id="title" placeholder="Example: Easy to use">
+      </div>
+
+      <div class="wrapper-3 wrapper">
+        <p>Would you recommend this product to a friend?</p>
+        <div class="inputs">
+          <input type="radio" name="recommend" id="yes">
+          <label for="yes">Yes</label>
+          <input type="radio" name="recommend" id="no">
+          <label for="no">No</label>
+        </div>
+      </div>
+
+      <div class="wrapper-4 wrapper">
+        <label for="review">Product review</label>
+        <textarea id="review" placeholder="Lorem poipoi poipoipoi lkjhljlkj yutuytuy hjgjhgjhgjhg..."></textarea>
+      </div>
+
+      <div class="wrapper-5 wrapper">
+        <div class="form-control">
+          <label for="title">Nickname</label>
+          <input type="text" id="title" placeholder="Example: Easy to use">
+        </div>
+        <div class="form-control">
+          <label for="title">Email address (will not be published)</label>
+          <input type="text" id="title" placeholder="Example: Easy to use">
+        </div>
+      </div>
+
+      <div class="wrapper-6 wrapper">
+        <input type="radio" name="accept" id="accept">
+        <label for="accept">I accept the <a href="#">terms and conditions</a></label>
+      </div>
+
+      <p class="bottom-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi voluptatem totam neque, culpa natus sint, odit dolor nemo pariatur commodi nostrum, obcaecati dolorem inventore.</p>
+
+      <button class="submit-btn">Submit product review</button>
+
+    </div>
+  </div>
+
+</body>
+
+</html>

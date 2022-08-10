@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"> -->
+  <link rel="stylesheet" href="./style.css">
+  <script src="./app.js" defer></script>
+</head>
+
+<body>
+
+  <div class="outer-container">
+    <div class="background"></div>
+    <div class="container">
+      <section class="left">
+        <header>
+          <img src="./images/user.jpg" alt="user">
+          <div class="info">
+            <h4>Ildiko Gaspar</h4>
+            <p>@igaspar</p>
+          </div>
+        </header>
+    
+        <ul>
+          <li>
+            <span class="icon-container">
+              <i class="fa-regular fa-square"></i>
+            </span>
+            General
+          </li>
+          <li>
+            <span class="icon-container">
+              <i class="fa-solid fa-lock"></i>
+            </span>
+            Password
+          </li>
+          <li>
+            <span class="icon-container">
+              <i class="fa-regular fa-envelope"></i>
+            </span>
+            Invitations
+          </li>
+          <li>
+            <span class="icon-container">
+              <i class="fa-solid fa-cube"></i>
+            </span>
+            Billing
+          </li>
+          <li>
+            <span class="icon-container">
+              <i class="fa-solid fa-braille"></i>
+            </span>
+            Apps
+          </li>
+        </ul>
+    
+        <button class="logout-btn">
+          <i class="fa-solid fa-arrow-right-from-bracket"></i>
+          <p>Logout</p>
+        </button>
+      </section>
+    
+      <section class="middle">
+        <h2>Billing</h2>
+    
+        <h4>Order History</h4>
+        <p>Manage billing information and view receips</p>
+    
+        <table>
+          <tr>
+            <th>Date</th>
+            <th>Type</th>
+            <th>Receipt</th>
+          </tr>
+          <tr>
+            <td>Oct. 21, 2021</td>
+            <td>Pro Annual</td>
+            <td>
+              <button class="download-btn">Download</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Oct. 21, 2021</td>
+            <td>Pro Portfolio</td>
+            <td>
+              <button class="download-btn">Download</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Oct. 21, 2021</td>
+            <td>Sponsored Post</td>
+            <td>
+              <button class="download-btn">Download</button>
+            </td>
+          </tr>
+          <tr>
+            <td>Oct. 21, 2021</td>
+            <td>Sponsored Post</td>
+            <td>
+              <button class="download-btn">Download</button>
+            </td>
+          </tr>
+        </table>
+
+        <a href="#" class="load-more">Load more</a>
+
+        <h4>Payment Method</h4>
+        <p>Manage billing information and view receips</p>
+
+        <footer>
+          <i class="fa-brands fa-cc-visa"></i>
+          <p>Visa ending in 2255</p>
+          <button class="remove-btn">Remove</button>
+        </footer>
+      </section>
+    
+      <section class="right">
+        <div class="card">
+          <p>Your plan</p>
+          <h4>Pro Annual</h4>
+          <p>Renews on Nov, 2021</p>
+          <button class="cancel-btn">Cancel subscription</button>
+        </div>
+      </section>
+    </div>
+  </div>
+
+</body>
+
+</html>

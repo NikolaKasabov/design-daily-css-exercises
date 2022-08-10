@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* padding: 50px; */
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+  background-color: #edeffb;
+  /* color: #fff; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  position: relative;
+  width: 410px;
+  height: 255px;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 60px;
+  width: 250px;
+  height: 255px;
+  background-color: #99a8ff;
+  border-radius: 20px;
+}
+
+.card {
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 100%;
+  padding: 25px;
+  background-color: #fff;
+  color: #343359;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card .custom-select {
+  position: relative;
+  font-size: 0.8rem;
+}
+
+.card .custom-select .select-btn {
+  padding: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #edeffb;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card .custom-select .select-btn .icon {
+  transition: transform 0.3s ease-out;
+}
+
+.card .custom-select.open .select-btn .icon {
+  transform: rotate(180deg);
+}
+
+.card .custom-select .options-container {
+  position: absolute;
+  display: none;
+}
+
+.card .custom-select.open .options-container {
+  display: block;
+}
+
+.card .custom-select .options-container .options-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.card .custom-select .options-container ul {
+  list-style-type: none;
+  padding: 0.5rem;
+  background-color: #fff;
+  border-radius: 5px;
+  position: relative;
+  z-index: 11;
+  box-shadow: 0px 3px 5px 2px #d4d6e5;
+}
+
+.card .custom-select .options-container ul li {
+  padding: 0.8rem;
+  border-radius: 5px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.card .custom-select .options-container ul li:hover {
+  background-color: #edeffb;
+}
+
+.card .input-container {
+  position: relative;
+  flex: 1;
+}
+
+.card .input-container input {
+  padding: 0.8rem 0 0.8rem 2rem;
+  width: 100%;
+  color: inherit;
+  border: none;
+}
+
+.card .input-container input:focus {
+  outline: 2px solid #99a8ff;
+  border-radius: 5px;
+}
+
+.card .input-container .icon {
+  position: absolute;
+  top: 12px;
+  left: 9px;
+  pointer-events: none;
+}

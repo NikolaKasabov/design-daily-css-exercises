@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* padding: 50px; */
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+  background-color: #e8e8fd;
+  /* color: #fff; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2,
+h4 {
+  color: #393a62;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+.outer-container {
+  position: relative;
+}
+
+.background {
+  position: absolute;
+  top: -8%;
+  left: -40px;
+  width: 200px;
+  height: 120%;
+  border-radius: 30px;
+  background-color: #ea4c3c;
+  z-index: -1;
+}
+
+.container {
+  background-color: #fff;
+  border-radius: 20px;
+  color: #9292ae;
+  display: flex;
+  overflow: hidden;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  font-size: 0.9rem;
+}
+
+.container .left {
+  padding: 45px 30px 30px 30px;
+  background-color: #f2f2ffe3;
+  display: flex;
+  flex-direction: column;
+}
+
+.container .left header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.container .left img {
+  width: 40px;
+  border-radius: 10px;
+}
+
+.container .left ul {
+  margin-top: 45px;
+  list-style-type: none;
+}
+
+.container .left ul li {
+  margin-bottom: 20px;
+  cursor: pointer;
+  position: relative;
+}
+
+.container .left ul li.selected {
+  color: #393a62;
+}
+
+.container .left ul li.selected::before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  width: 5px;
+  height: 200%;
+  border-radius: 5px;
+  background-color: #ea4c3c;
+}
+
+.container .left .icon-container {
+  display: inline-block;
+  width: 25px;
+  text-align: center;
+}
+
+.container .left .logout-btn {
+  margin-top: auto;
+  border: none;
+  background-color: transparent;
+  color: inherit;
+  font-size: inherit;
+  display: flex;
+  gap: 10px;
+}
+
+.container .left .logout-btn i {
+  font-size: 1.3rem;
+}
+
+.container .middle {
+  padding: 50px;
+  background-color: #fdfdff;
+}
+
+.container .middle h4 {
+  margin: 45px 0 5px 0;
+}
+
+.container .middle p {
+  font-size: 0.75rem;
+}
+
+.container .middle table {
+  margin-top: 40px;
+  text-align: left;
+  border-collapse: collapse;
+  position: relative;
+  left: -10px;
+}
+
+.container .middle table tr:not(:first-child):hover {
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.container .middle table tr:not(:first-child):hover td:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.container .middle table tr:not(:first-child):hover td:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.container .middle table th,
+.container .middle table td {
+  padding: 7px 10px;
+}
+
+.container .middle table td {
+  color: #393A62;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.container .middle table th:nth-child(1) {
+  width: 145px;
+}
+
+.container .middle table th:nth-child(2) {
+  width: 185px;
+}
+
+.container .middle button,
+.container .right button {
+  border: none;
+  background-color: transparent;
+  padding: 5px 10px;
+  border: 1px solid #E0E0EA;
+  border-radius: 5px;
+}
+
+.container .middle .load-more {
+  display: block;
+  margin-top: 15px;
+  font-size: 0.8rem;
+  color: #EE4D38;
+}
+
+.container .middle footer {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  color: #393a62;
+}
+
+.container .middle footer i {
+  font-size: 3rem;
+  margin-right: 10px;
+}
+
+.container .middle footer .remove-btn {
+  margin: 0 10px 0 auto;
+}
+
+.container .right {
+  padding: 115px 40px 0 0;
+  background-color: #fdfdff;
+}
+
+.container .right .card {
+  padding: 25px;
+  background-color: #EE4D38;
+  color: #fff;
+  border-radius: 15px;
+}
+
+.container .right .card p {
+  font-size: 0.8rem;
+}
+
+.container .right .card h4 {
+  margin: 20px 0 10px 0;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.container .right .card .cancel-btn {
+  margin-top: 10px;
+  color: #fff;
+  white-space: nowrap;
+}

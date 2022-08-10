@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* padding: 50px; */
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+  background-color: #f5f9ff;
+  /* color: #fff; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 400px;
+  box-shadow: 0px 5px 10px 5px #e0e7f5;
+  border-radius: 20px;
+  position: relative;
+  padding: 2rem;
+}
+
+.close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  border: none;
+  background-color: transparent;
+  font-size: 1.5rem;
+  color: #354773;
+  cursor: pointer;
+}
+
+.section-1 h2 {
+  font-size: 1.3rem;
+}
+
+.section-1 p {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.section-2 {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+
+.section-2 label {
+  font-size: 0.8rem;
+}
+
+.section-2 .select-wrapper {
+  margin-top: 0.3rem;
+  position: relative;
+}
+
+.section-2 select {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #b0c5e6;
+  border-radius: 5px;
+  appearance: none;
+}
+
+.section-2 .arrow {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  color: #8cb0eb;
+  pointer-events: none;
+}
+
+.section-2 .info {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+  margin-top: 1rem;
+}
+
+.section-2 p {
+  margin-top: 1rem;
+  width: 90%;
+  font-size: 0.8rem;
+}
+
+.back-btn {
+  margin-top: 2rem;
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #9CB6DD;
+  border-radius: 5px;
+  background-color: transparent;
+}

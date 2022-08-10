@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* padding: 50px; */
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+  background-color: #e9e9fb;
+  /* color: #fff; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 330px;
+  height: 620px;
+  background-color: #fff;
+  box-shadow: 0px 10px 10px 10px rgba(215, 214, 238, 0.7);
+  border-radius: 15px;
+  padding: 55px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+h2,
+h4 {
+  font-family: "Times New Roman", Times, serif;
+  color: #2c2b56;
+}
+
+.section-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.section-1 .form-control {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-1 .form-control .text {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.section-1 .form-control input {
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.section-1 .form-control input + label {
+  width: 50px;
+  height: 30px;
+  background-color: #e9e9fb;
+  border-radius: 20px;
+  position: relative;
+}
+
+.section-1 .form-control input + label .circle {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  background-color: #fff;
+  border: 1px solid #c4c4e9;
+  border-radius: 50%;
+  transition: left 0.3s, background-color 0.3s;
+}
+
+.section-1 .form-control input:checked + label .circle {
+  left: 25px;
+  background-color: #1e1d4b;
+  border: 1px solid #1e1d4b;
+}
+
+.section-2,
+.section-3 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.section-2 h4,
+.section-3 h4 {
+  font-size: 1.2rem;
+}
+
+.section-2 .form-control,
+.section-3 .form-control {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.section-2 .form-control input,
+.section-3 .form-control input {
+  width: 16px;
+  height: 16px;
+}
+
+.section-2 .form-control label,
+.section-3 .form-control label {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+a {
+  color: #272652;
+  font-size: 0.9rem;
+  font-weight: bold;
+}

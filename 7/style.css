@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* padding: 50px; */
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+  background-color: #ccebe9;
+  /* color: #fff; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 430px;
+  height: 520px;
+  position: relative;
+}
+
+.background {
+  width: 410px;
+  height: 500px;
+  background-color: #B8D4E4;
+  border-radius: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.card {
+  width: 385px;
+  height: 480px;
+  padding: 43px 42px;
+  background-color: #fff;
+  border-radius: 30px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  box-shadow: 0px 10px 20px 10px #BFDFED;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card .section-1 h2 {
+  font-size: 1.2rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.card .section-1 p {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+}
+
+.card .section-2 {
+  border-bottom: 2px solid #C2C6CF;
+}
+
+.card .section-2 .row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.card .section-2 .row .column-1 {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card .section-2 .row .column-1 img {
+  width: 100%;
+}
+
+.card .section-2 .row .column-2 p {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.card .section-2 .row .column-2 .tag {
+  padding: 0.25rem 0.5rem;
+  margin-top: 0.5rem;
+  border-radius: 20px;
+  font-size: 0.6rem;
+  display: inline-block;
+  color: #fff;
+  background-color: #76B736;
+}
+
+.card .section-2 .quantity {
+  margin: 22px 0 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.card .section-2 .quantity button {
+  width: 25px;
+  height: 25px;
+  border: none;
+  background-color: #E0F2FA;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.card .section-2 .quantity button:hover {
+  background-color: #d2e6f0;
+}
+
+.card .section-2 .quantity button:active {
+  transform: scale(0.95);
+  background-color: #cadde6;
+}
+
+.card .section-2 .quantity input {
+  width: 25px;
+  height: 25px;
+  border: 1px solid #E1E3E7;
+  border-radius: 3px;
+  text-align: center;
+}
+
+/* Remove the arrows from the type number input */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.card .section-3 {
+  font-size: 0.8rem;
+}
+
+.card .section-3 .price-info {
+  margin-bottom: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card .section-3 .price-info:nth-child(3) {
+  font-weight: bold;
+}
+
+.card .section-3 .price-info p:nth-child(2) {
+  font-weight: bold;
+}
+
+.submit-btn {
+  margin-top: 0.5rem;
+  padding: 1rem;
+  border-radius: 40px;
+  border: none;
+  background-color: #4378FF;
+  color: #fff;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #4171eb;
+}
+
+.submit-btn:active {
+  transform: scale(0.98);
+  background-color: #3966d6;
+}
